@@ -1,22 +1,33 @@
 <templateManifest typeOfTemplate="Solution">
   <name>Clean Helix Solution</name>
   <description>A blank Helix Solution.</description>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   <author>Anders Laub</author>
   <sourceFolder>/src</sourceFolder>
   <saveOnCreate>true</saveOnCreate>
   <templateEngine type="LaubPlusCo.Foundation.HelixTemplating.TemplateEngine.DefaultHelixTemplateEngine, LaubPlusCo.Foundation.HelixTemplating" />
   <replacementTokens>
-    <token key="$publishUrl$" displayName="Publish URL" required="true" default="http://" input="Text" />
+    <token key="$publishUrl$" displayName="Publish URL" required="true" default="http://dev.MyProject.com" input="Text" />
+    <token key="$sitecoreVersion$" displayName="Sitecore version (for Sitecore nuget packages)" default="9.0.180604" required="true" input="Text"
+       validationType="LaubPlusCo.Foundation.HelixTemplating.Tokens.ValidateVersionNumberToken, LaubPlusCo.Foundation.HelixTemplating">
+      <option name="9.0 Update 2" key="9.0.180604" />
+      <option name="9.0 Update 1" key="9.0.171219" />
+      <option name="9.0" key="9.0.171002" />
+      <option name="8.2 Update 7" key="8.2.180406" />
+      <option name="8.2 Update 6" key="8.2.171121" />
+      <option name="8.2 Update 5" key="8.2.170728" />
+      <option name="8.2 Update 4" key="8.2.170614" />
+      <option name="8.2 Update 3" key="8.2.170407" />
+      <option name="8.2 Update 2" key="8.2.161221" />
+      <option name="8.2 Update 1" key="8.2.161115" />
+      <option name="8.2" key="8.2.160729" />
+    </token>
   </replacementTokens>
   <projectsToAttach />
   <virtualSolutionFolders>
     <virtualSolutionFolder name="Build">
       <file path="/.editorconfig" />
       <file path="/nuget.config" />
-      <file path="/package.json" />
-      <file path="/README.md" />
-      <file path="/publishsettings.targets" />
     </virtualSolutionFolder>
   </virtualSolutionFolders>
   <ignoreFiles>

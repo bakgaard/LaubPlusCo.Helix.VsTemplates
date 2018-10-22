@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("$moduleNamespace$")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Netcompany")]
 [assembly: AssemblyProduct("$moduleNamespace$")]
 [assembly: AssemblyCopyright("Copyright ©  $year$")]
 [assembly: AssemblyTrademark("")]

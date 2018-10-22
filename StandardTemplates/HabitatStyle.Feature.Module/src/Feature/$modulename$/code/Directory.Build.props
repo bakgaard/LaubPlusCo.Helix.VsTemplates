@@ -1,0 +1,6 @@
+<Project>
+	<Import Project="../../Feature.Build.props"/>
+  <ItemGroup>
+    <!-- <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.6" /> -->
+  </ItemGroup>
+</Project>
